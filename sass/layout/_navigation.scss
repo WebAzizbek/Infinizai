@@ -16,7 +16,7 @@
     li:not(:last-child) {
         margin-right: 6rem;
         @include responsive(big-table) {
-            margin-right: 3rem;
+            margin-right: 2.8rem;
         }
     }
     li {
