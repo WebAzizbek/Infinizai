@@ -74,10 +74,7 @@
         padding: 10.4rem 0rem 14rem;
     }
     @include responsive(phone) {
-        padding: 9rem 0rem 13rem;
-    }
-    @include responsive(litle-phone) {
-        padding: 5rem 0rem 9rem;
+        padding: 4rem 0rem 4rem;
     }
     .container {
         display: flex;
