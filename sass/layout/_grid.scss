@@ -1,0 +1,16 @@
+.sponsors__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 33px;
+
+}
+.sponsors__brand {
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.sponsors__brand-img {
+    display: block;
+    margin-left: auto;margin-right: auto;
+}
