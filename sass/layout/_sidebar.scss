@@ -59,6 +59,7 @@
 .future {
     padding: 13rem 0 13rem;
     background-image: url("../images/png/future.png");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -187,6 +188,10 @@
     background: rgba(255, 255, 255, 0.15);
     border-radius: 2rem;
     padding: 3.5rem 3.5rem 3.2rem 8rem;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
     @include responsive(big-table) {
         padding: 2.5rem 2.5rem 2.2rem 7rem;
     }
@@ -238,5 +243,144 @@
     }
     @include responsive(litle-phone) {
         font-size: 1rem;
+    }
+}
+
+// GAMING STYLES
+.gaming {
+    padding: 13rem  0rem;
+    background-color: #000;
+    @include responsive(laptop) {
+        padding: 10rem  0rem;
+    }
+    @include responsive(big-table) {
+        padding: 4rem  0rem;
+        text-align: center;
+    }
+    @include responsive(phone) {
+        padding: 3rem  0rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 1.5rem  0rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(big-table) {
+            flex-direction: column;
+        }
+    }
+}
+
+.gaming__wrapper {
+
+    .heade-bottom__esports-wrapper {
+        margin-bottom: 1.35rem;
+        @include responsive(big-table) {
+            margin-bottom: 1rem;
+        }
+        @include responsive(litle-phone) {
+            margin-bottom: 0.5rem;
+        }
+    }
+    .flain-img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-bottom__top-title {
+        @include responsive(big-table) {
+            font-size: 1.5rem;
+        }
+        @include responsive(phone) {
+            font-size: 1.2rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+.gaming__title {
+    width: 100%;
+    max-width: 684px;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.15;
+    margin-bottom: 3.8rem;
+    @include responsive(laptop) {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(big-table) {
+        font-size: 3.3rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2.3rem;
+        margin-bottom: 1.4rem;
+    }
+}
+.gaming__text {
+    width: 100%;
+    max-width: 721px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-future-text;
+    margin-bottom: 5.4rem;
+    @include responsive(laptop) {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(big-table) {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.gaming__btn {
+    @include responsive(laptop) {
+        padding: 1.5rem 2.8rem;
+    }
+    @include responsive(big-table) {
+        padding: 1rem 2.3rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(phone) {
+        padding: 0.7rem 2rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 0.4rem 1.7rem;
+        margin-bottom: 2rem;
+    }
+}
+.gaming__img-wrapper {
+    position: relative;
+    margin-left: 2rem;
+    // &:hover .gaming__img-inner {
+    //     animation: player 1s ease;
+    // }
+}
+.gaming__img {
+    object-fit: contain;
+    object-position: center;
+    @include responsive(big-table) {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 458px;
     }
 }
