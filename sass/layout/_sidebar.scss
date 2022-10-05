@@ -384,3 +384,126 @@
         max-height: 458px;
     }
 }
+
+
+
+// CHARACTER STYLES
+.character {
+    background-color: $color-bg-character;
+    @include responsive(big-table) {
+        padding: 2rem 0rem 0rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 1rem 0rem 0rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(big-table) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+}
+
+.character__img {
+    object-fit: contain;
+    object-position: center;
+    margin-right: 2rem;
+    @include responsive(big-table) {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+        margin-top: 4rem;
+    }
+    @include responsive(phone) {
+        margin-top: 2rem;
+    }
+    
+}
+.character__text-wrapper {
+
+    .heade-bottom__esports-wrapper {
+        margin-bottom: 1.2rem;
+        @include responsive(laptop) {
+            margin-bottom: 1rem;
+        }
+        @include responsive(phone) {
+            margin-bottom: 0.7rem;
+        }
+    }
+    .flain-img {
+        @include responsive(litle-phone) {
+            width: 23px;
+            height: 23px;
+        }
+    }
+    .header-bottom__top-title {
+        @include responsive(phone) {
+            font-size: 1.5rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.character__title {
+    width: 100%;
+    max-width: 576px;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.15;
+    margin-bottom: 3.8rem;
+    @include responsive(laptop) {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    @include responsive(phone) {
+        font-size: 3rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.character__text {
+    width: 100%;
+    max-width: 561px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-footer-text;
+    margin-bottom: 6.5rem;
+    @include responsive(laptop) {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+.character__img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 3rem;
+    @include responsive(phone) {
+        gap: 2rem;
+    }
+    @include responsive(litle-phone) {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+}
+.character__inner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+}
