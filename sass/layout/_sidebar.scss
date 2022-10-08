@@ -774,3 +774,156 @@
         font-size: 1.7rem;
     }
 }
+
+
+
+// COMMUNITY STYLES
+.community {
+    padding: 12.6rem 0 13rem;
+    background-image: url("../images/png/community-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include responsive(big-table) {
+        padding: 10rem 0 10rem;
+    }
+    @include responsive(table) {
+        padding: 7rem 0 7rem;
+    }
+    @include responsive(phone) {
+        padding: 4rem 0 4rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 2rem 0 2rem;
+    }
+    .container {
+        text-align: center;
+    }
+}
+
+.community__title {
+    width: 100%;
+    max-width: 746px;
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 1.13;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    color: $color-order-title;
+    @include responsive(big-table) {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(table) {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(phone) {
+        font-size: 3.1rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    span {
+        background-image: url("../images/svg/community-hr.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 20px bottom;
+        padding-bottom: 1rem;
+        @include responsive(phone) {
+            padding-bottom: 0.5rem;
+        }
+    }
+
+}
+.community__text {
+    width: 100%;
+    max-width: 846px;
+    font-size: 1.8rem;
+    line-height: 1.55;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-sponsor-text;
+    margin-bottom: 4.5rem;
+    @include responsive(big-table) {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(table) {
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.community__form {
+    display: inline-flex;
+    background-color: $color-white;
+    @include responsive(phone) {
+        flex-direction: column;
+        background-color: transparent;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+    }
+}
+.community__input {
+    outline: none;
+    padding: 0 22.6rem 0 1.3rem;
+    &::placeholder {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.55;
+        color: $color-sponsor-text;
+        opacity: 0.8;
+        @include responsive(phone) {
+            font-size: 1.5rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.2rem;
+        }
+    }
+    @include responsive(table) {
+        padding: 0 5.6rem 0 1.3rem;    
+    }
+    @include responsive(phone) {
+        background-color: $color-white;
+        padding: 1.5rem 5.6rem 1.5rem 1.3rem; 
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+.community__btn {
+    &:hover {
+        background-color: #FF4949;
+        color: $color-white;
+        border-color: $color-white;
+    }
+    span {
+        color: transparent;
+    }
+    @include responsive(table) {
+        padding: 1.4rem 2.7rem;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+}
