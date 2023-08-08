@@ -1,0 +1,930 @@
+.sponsors {
+    background-color: $color-bg-yellow;
+    padding: 12.8rem 0rem 13rem;
+    text-align: center;
+    @include responsive(big-table) {
+        padding: 4.8rem 0rem 5rem;
+    }
+    @include responsive(phone) {
+        padding: 3.8rem 0rem 4rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 1.8rem 0rem 2rem;
+    }
+}
+
+.sponsors__title {
+    font-size: 4.8rem;
+    color: $color-sponsor-title;
+    margin-bottom: 2.9rem;
+    span {
+        background-image: url("../images/svg/sponsors-hr.svg");
+        background-repeat: no-repeat;
+        background-size: 292px 12px;
+        background-position: bottom;
+        display: inline-block;
+    }
+    @include responsive(table) {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(phone) {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 3rem;
+        margin-bottom: 0.7rem;
+    }
+}
+.sponsors__text {
+    width: 100%;
+    max-width: 576px;
+    color: $color-sponsor-text;
+    margin-bottom: 4.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include responsive(table) {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+// FUTERE STYLES
+.future {
+    padding: 13rem 0 13rem;
+    background-image: url("../images/png/future.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    @include responsive(laptop) {
+        padding: 8rem 0 8rem;
+    }
+    @include responsive(big-table) {
+        padding: 5rem 0 5rem;
+    }
+    @include responsive(phone) {
+        padding: 3rem 0 3rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 2rem 0 2rem;
+    }
+    .container {
+        padding-right: 5.8rem;
+        padding-left: 5.8rem;
+        @include responsive(phone) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+    .heade-bottom__esports-wrapper {
+        margin-bottom: 1.2rem;
+        @include responsive(laptop) {
+            margin-bottom: 1rem;
+        }
+        @include responsive(big-table) {
+            margin-bottom: 0.7rem;
+        }
+        .header-bottom__top-title {
+            @include responsive(phone) {
+                font-size: 1.2rem;
+            }
+        }
+        @include responsive(litle-phone) {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+.future__title {
+    width: 100%;
+    max-width: 716px;
+    font-size: 6.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.9rem;
+    @include responsive(laptop) {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(big-table) {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(table) {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(phone) {
+        font-size: 2.5rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.future__text {
+    width: 100%;
+    max-width: 698px;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: $color-footer-text;
+    margin-bottom: 6.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    @include responsive(laptop) {
+        font-size: 1.8rem;
+    }
+    @include responsive(table) {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.2rem;
+        margin-bottom: 1.8rem;
+    }
+}
+.future__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3.2rem;
+    text-align: left;
+    @include responsive(laptop) {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    @include responsive(big-table) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    @include responsive(table) {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+    }
+    @include responsive(litle-phone) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+}
+.future__item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2rem;
+    padding: 3.5rem 3.5rem 3.2rem 8rem;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+    @include responsive(big-table) {
+        padding: 2.5rem 2.5rem 2.2rem 7rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 2rem 2rem 1.7rem 6.5rem;
+    }
+}
+.future__item-title-wrapper {
+    display: flex;
+    position: relative;
+    img {
+        display: block;
+        object-fit: contain;
+        object-position: center;
+        position: absolute;
+        left: -50px;
+    }
+}
+.future__item-title {
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.9rem;
+    @include responsive(laptop) {
+        font-size: 2.3rem;
+        margin-bottom: 1.6rem;
+    }
+    @include responsive(big-table) {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.5rem;
+    }
+    
+
+}
+.future__item-text {
+    width: 100%;
+    max-width: 470px;
+    font-size: 1.8rem;
+    line-height: 1.55;
+    color: $color-future-text;
+    @include responsive(laptop) {
+        font-size: 1.4rem;
+    }
+    @include responsive(big-table) {
+        font-size: 1.2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1rem;
+    }
+}
+
+// GAMING STYLES
+.gaming {
+    padding: 13rem  0rem;
+    background-color: #000;
+    @include responsive(laptop) {
+        padding: 10rem  0rem;
+    }
+    @include responsive(big-table) {
+        padding: 4rem  0rem;
+        text-align: center;
+    }
+    @include responsive(phone) {
+        padding: 3rem  0rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 1.5rem  0rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(big-table) {
+            flex-direction: column;
+        }
+    }
+}
+
+.gaming__wrapper {
+
+    .heade-bottom__esports-wrapper {
+        margin-bottom: 1.35rem;
+        @include responsive(big-table) {
+            margin-bottom: 1rem;
+        }
+        @include responsive(litle-phone) {
+            margin-bottom: 0.5rem;
+        }
+    }
+    .flain-img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-bottom__top-title {
+        @include responsive(big-table) {
+            font-size: 1.5rem;
+        }
+        @include responsive(phone) {
+            font-size: 1.2rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+.gaming__title {
+    width: 100%;
+    max-width: 684px;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.15;
+    margin-bottom: 3.8rem;
+    @include responsive(laptop) {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(big-table) {
+        font-size: 3.3rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2.3rem;
+        margin-bottom: 1.4rem;
+    }
+}
+.gaming__text {
+    width: 100%;
+    max-width: 721px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-future-text;
+    margin-bottom: 5.4rem;
+    @include responsive(laptop) {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(big-table) {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.gaming__btn {
+    @include responsive(laptop) {
+        padding: 1.5rem 2.8rem;
+    }
+    @include responsive(big-table) {
+        padding: 1rem 2.3rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(phone) {
+        padding: 0.7rem 2rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 0.4rem 1.7rem;
+        margin-bottom: 2rem;
+    }
+}
+.gaming__img-wrapper {
+    position: relative;
+    margin-left: 2rem;
+    // &:hover .gaming__img-inner {
+    //     animation: player 1s ease;
+    // }
+}
+.gaming__img {
+    object-fit: contain;
+    object-position: center;
+    @include responsive(big-table) {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 458px;
+    }
+}
+
+
+
+// CHARACTER STYLES
+.character {
+    background-color: $color-bg-character;
+    @include responsive(big-table) {
+        padding: 2rem 0rem 0rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 1rem 0rem 0rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(big-table) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+}
+
+.character__img {
+    object-fit: contain;
+    object-position: center;
+    margin-right: 2rem;
+    @include responsive(big-table) {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+        margin-top: 4rem;
+    }
+    @include responsive(phone) {
+        margin-top: 2rem;
+    }
+    
+}
+.character__text-wrapper {
+
+    .heade-bottom__esports-wrapper {
+        margin-bottom: 1.2rem;
+        @include responsive(laptop) {
+            margin-bottom: 1rem;
+        }
+        @include responsive(phone) {
+            margin-bottom: 0.7rem;
+        }
+    }
+    .flain-img {
+        @include responsive(litle-phone) {
+            width: 23px;
+            height: 23px;
+        }
+    }
+    .header-bottom__top-title {
+        @include responsive(phone) {
+            font-size: 1.5rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.character__title {
+    width: 100%;
+    max-width: 576px;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.15;
+    margin-bottom: 3.8rem;
+    @include responsive(laptop) {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    @include responsive(phone) {
+        font-size: 3rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.character__text {
+    width: 100%;
+    max-width: 561px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $color-footer-text;
+    margin-bottom: 6.5rem;
+    @include responsive(laptop) {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+.character__img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    @include responsive(phone) {
+        gap: 1rem;
+    }
+    @include responsive(litle-phone) {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+}
+.character__inner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s;
+    padding: 10px;
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px 0px $color-primary;
+        border-radius: 10px;
+    }
+}
+
+
+
+// PLAY STYLES
+.play {
+    width: 100%;
+    background-color: #000;
+    // .container {
+        
+    // }
+}
+
+.play__list {
+    display: flex;
+    width: 100%;
+}
+.play__item {
+    position: relative;
+    width: 100%;
+}
+.play__img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    transition: transform 5s;
+
+}
+.play__inner-img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+
+// ARTICLES
+.articles {
+    background-color: $color-black;
+    padding: 13rem 0rem;
+    @include responsive(laptop) {
+    padding: 9rem 0rem;
+    }
+    @include responsive(big-table) {
+        padding: 7rem 0rem;
+    }
+    @include responsive(table) {
+        padding: 4rem 0rem;
+    }
+    @include responsive(phone) {
+        padding: 2rem 0rem;
+    }
+    .container {
+        .heade-bottom__esports-wrapper {
+            margin-bottom: 1.2rem;
+            @include responsive(phone) {
+                margin-bottom: 0rem;
+            }
+        }
+        .flain-img {
+            width: 25px;
+            height: 25px;
+        }
+        .header-bottom__top-title {
+            @include responsive(phone) {
+                font-size: 1.5rem;
+            }
+            @include responsive(litle-phone) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+.articles__title-wrapper {
+    margin-bottom: 6.4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include responsive(big-table) {
+        margin-bottom: 5rem;
+    }
+    @include responsive(table) {
+        margin-bottom: 3rem;
+    }
+    @include responsive(litle-phone) {
+        margin-bottom: 2.5rem;
+    }
+    @include responsive(litle-phone) {
+        flex-direction: column;
+    }
+}
+.articles__title {
+    width: 100%;
+    max-width: 490px;
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.15;
+    @include responsive(laptop) {
+        font-size: 5.5rem;
+    }
+    @include responsive(big-table) {
+        font-size: 4.3rem;
+        max-width: 400px;
+    }
+    @include responsive(table) {
+        font-size: 3.5rem;
+        max-width: 320px;
+    }
+    @include responsive(phone) {
+        max-width: 180px;
+        font-size: 2.5rem;
+    }
+    @include responsive(litle-phone) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+}
+.articles__btn {
+    @include responsive(table) {
+        padding: 1.5rem 2.8rem;
+    }
+    @include responsive(phone) {
+        padding: 0.5rem 1.8rem;
+        font-size: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.articles__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    column-gap: 2.4rem;
+    row-gap: 3.8rem;
+    @include responsive(table) {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    @include responsive(phone) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 2rem;
+    }
+    @include responsive(litle-phone) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+.articles__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.03);
+        color: $color-primary;
+    }
+
+}
+.articles__item:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+    @include responsive(phone) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.articles__img {
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 3rem;
+    display: inline-flex;
+    width: 100%;
+    @include responsive(big-table) {
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        margin-bottom: 1.5rem;
+    }
+}
+.articles__item:first-child .articles__img {
+    margin-bottom: 5.4rem;
+    @include responsive(big-table) {
+        margin-bottom: 4rem;
+    }
+    @include responsive(phone) {
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        margin-bottom: 1.5rem;
+    }
+}
+.articles__item-date {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: $color-primary;
+    margin-bottom: 2rem;
+    @include responsive(litle-phone) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.articles__item:first-child .articles__item-date {
+    margin-bottom: 2.8rem;
+    @include responsive(phone) {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: $color-primary;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+.articles__item-text {
+    width: 100%;
+    max-width: 303px;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    @include responsive(big-table) {
+        font-size: 2rem;
+    }
+    @include responsive(phone) {
+        width: 100%;
+        max-width: 607px;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.7rem;
+    }
+}
+.articles__item:first-child .articles__item-text {
+    width: 100%;
+    max-width: 607px;
+    font-size: 3.6rem;
+    line-height: 1.27;
+    @include responsive(big-table) {
+        font-size: 3rem;
+    }
+    @include responsive(phone) {
+        width: 100%;
+        max-width: 607px;
+        font-weight: 400;
+        font-size: 2.3rem;
+        line-height: 1.5;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+// COMMUNITY STYLES
+.community {
+    padding: 12.6rem 0 13rem;
+    background-image: url("../images/png/community-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include responsive(big-table) {
+        padding: 10rem 0 10rem;
+    }
+    @include responsive(table) {
+        padding: 7rem 0 7rem;
+    }
+    @include responsive(phone) {
+        padding: 4rem 0 4rem;
+    }
+    @include responsive(litle-phone) {
+        padding: 2rem 0 2rem;
+    }
+    .container {
+        text-align: center;
+    }
+}
+
+.community__title {
+    width: 100%;
+    max-width: 746px;
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 1.13;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    color: $color-order-title;
+    @include responsive(big-table) {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(table) {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(phone) {
+        font-size: 3.1rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    span {
+        background-image: url("../images/svg/community-hr.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 20px bottom;
+        padding-bottom: 1rem;
+        @include responsive(phone) {
+            padding-bottom: 0.5rem;
+        }
+    }
+
+}
+.community__text {
+    width: 100%;
+    max-width: 846px;
+    font-size: 1.8rem;
+    line-height: 1.55;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-sponsor-text;
+    margin-bottom: 4.5rem;
+    @include responsive(big-table) {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(table) {
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+    }
+    @include responsive(phone) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.community__form {
+    display: inline-flex;
+    background-color: $color-white;
+    @include responsive(phone) {
+        flex-direction: column;
+        background-color: transparent;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+    }
+}
+.community__input {
+    outline: none;
+    padding: 0 22.6rem 0 1.3rem;
+    &::placeholder {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.55;
+        color: $color-sponsor-text;
+        opacity: 0.8;
+        @include responsive(phone) {
+            font-size: 1.5rem;
+        }
+        @include responsive(litle-phone) {
+            font-size: 1.2rem;
+        }
+    }
+    @include responsive(table) {
+        padding: 0 5.6rem 0 1.3rem;    
+    }
+    @include responsive(phone) {
+        background-color: $color-white;
+        padding: 1.5rem 5.6rem 1.5rem 1.3rem; 
+        margin-bottom: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+.community__btn {
+    &:hover {
+        background-color: #FF4949;
+        color: $color-white;
+        border-color: $color-white;
+    }
+    span {
+        color: transparent;
+    }
+    @include responsive(table) {
+        padding: 1.4rem 2.7rem;
+    }
+    @include responsive(litle-phone) {
+        max-width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+    }
+}

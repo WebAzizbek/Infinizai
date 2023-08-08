@@ -1,0 +1,221 @@
+.wrapper {
+    background-image: linear-gradient(to right, $color-bg-black 56%, $color-primary 56%, $color-primary 100%);
+    @include responsive(big-table) {
+        background-image: none;
+        background-color: $color-bg-black;
+    }
+
+}
+.header-top {
+    margin-top: 2rem;
+    @include responsive(phone) {
+        margin-top: 1rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.header-top__wrapper {
+    display: flex;
+    align-items: center;
+}
+.buy-btn {
+    margin-right: 2rem;
+    @include responsive(big-table) {
+        margin-right: 1rem;
+    }
+    @include responsive(phone) {
+        display: none;
+    }
+}
+.buy-btn-img {
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+.header-top__btn {
+    padding: 1.4rem 2.9rem;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    transition: all 0.2s;
+    @include responsive(big-table) {
+        padding: 0.9rem 2.4rem;
+        font-size: 1.5rem;
+    }
+    @include responsive(phone) {
+        display: none;
+    }
+    
+}
+.header-top__btn:hover {
+    border: 1px solid $color-bg-yellow;
+    background-color: $color-bg-yellow;
+}
+.bars-btn {
+    display: none;
+    margin-left: 2rem;  
+    @include responsive(table) {
+        display: block;
+    }
+}
+
+
+// HEADER BOTTOM  
+.header-bottom {
+    padding: 21.4rem 0rem 25rem;
+    display: flex;
+    align-items: center;
+    @include responsive(big-table) {
+        padding: 13.4rem 0rem 17rem;
+    }
+    @include responsive(table) {
+        padding: 10.4rem 0rem 14rem;
+    }
+    @include responsive(phone) {
+        padding: 4rem 0rem 4rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(big-table) {
+            flex-direction: column;
+        }
+    }
+}
+.vertical-text-wrapper {
+    padding: 0rem 1.5rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    @include responsive(phone) {
+        display: none;
+    }
+
+}
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: $color-header-text;
+    transition: all 0.1s;
+    &:hover {
+        text-shadow: 0px 0px 30px $color-white;
+    }
+}
+.heade-bottom__esports-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    @include responsive(table) {
+        margin-bottom: 1rem;
+    }
+    @include responsive(litle-phone) {
+        margin-bottom: 0.7rem;
+    }
+}
+.flain-img {
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin-right: 0.8rem;
+}
+.header-bottom__top-title {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: $color-primary;
+    text-transform: uppercase;
+    @include responsive(litle-phone) {
+        font-size: 1.3rem;
+    }
+}
+.header-bottom__title {
+    width: 100%;
+    max-width: 656px;
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 1.2;
+    margin-bottom: 4.5rem;
+    span {
+        display: inline-block;
+        background-image: url("../images/svg/title-underline.svg");
+        background-repeat: no-repeat;
+        background-size: 434px 16px;
+        background-position: right bottom;
+        padding-bottom: 1rem;
+    }
+    @include responsive(laptop) {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+    @include responsive(table) {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 4rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.header-bottom__text {
+    width: 100%;
+    max-width: 615px;
+    font-size: 1.8rem;
+    color: $color-footer-text;
+    margin-bottom: 5.3rem;
+    @include responsive(table) {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    @include responsive(litle-phone) {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}
+.header-bottom__btn-wrapper {
+    @include responsive(litle-phone) {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+.header-bottom__btn {
+    margin-right: 4rem;
+    text-align: center;
+    @include responsive(table) {
+        padding: 1.2rem 2.5rem;
+    }
+    @include responsive(phone) {
+        padding: 0.7rem 2rem;
+        margin-right: 1.5rem;
+    }
+}
+.header-bottom__link {
+    font-size: 1.8rem;
+    @include responsive(phone) {
+        font-size: 1.5rem;
+    }
+    @include responsive(litle-phone) {
+        text-align: center;
+        margin-top: 0.9rem;
+    }
+}
+.header-bottom__link:hover {
+    color: $color-primary;
+}
+.header-bottom__img {
+    object-fit: contain;
+    object-position: center;
+    transform: .3s;
+    &:hover{filter: hue-rotate(1000deg);}
+    @include responsive(big-table) {
+        margin-top: 2rem;  
+    }
+}
